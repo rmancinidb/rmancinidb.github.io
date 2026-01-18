@@ -356,24 +356,17 @@ footer {
 
 /*----------------- My Version for mobile phones and tablets */
 
-
 @media print, screen and (max-width: 720px) {
   
-
-  /* Define a variable for the height of the header */
-:root {
-    --header-height: 50px; /* Adjust this number until it looks perfect */
-  }
-
-
+  /* This makes the header stick to the top of the phone screen */
+  
   header {
-      
-    position: fixed;   /* This makes the header stick to the top of the phone screen */
+    position: fixed;   /* Sticks it */
     top: 0;
     left: 0;
     width: 100%;       /* Spans the full width of the phone */
-    height: auto;      /* Height fix by the variable */
-    /* padding: 5px 0;     /* Small cushion */
+    height: auto;      /* Height adjusts to the content */
+    padding: 5px 0;     /* Small cushion */
     z-index: 1000;     /* Ensures it stays on top of the text */
     background: #fde1f7;  /* Your sidebar color */
   }
@@ -383,7 +376,7 @@ footer {
     display: flex;        /* The easiest way to put things in a row */
     flex-direction: row;  /* Force side-by-side */
     width: 100%;          /*The list of buttoms fill everything */
-    height: auto; */
+    height: auto;
     margin: 0;     /* Space above the buttons */
     padding: 0;    /* No extra space inside the buttons area */
   }
@@ -396,11 +389,11 @@ footer {
     border-right: 1px solid #001702; /* Add lateral dividers */
   }
 
-
+ 
   header ul li a {
     /* 3. Make the buttons feel "thicker" and easier to tap */
-    padding: 5px 0; 
-    height: auto;    /* Overwrite the old 34px height */
+    padding: 15px 0; 
+    height: auto;   /* Overwrite the old 34px height */
     line-height: 1; /* Centers the text perfectly */
     display: block;
     text-align: center; /* Centers the text horizontally */
@@ -408,7 +401,8 @@ footer {
 
  /* Make sure the main content doesn't get hidden under the fixed header */
 section {
-    /* Now the margin matches the header height automatically! */
-    margin-top: calc(header_height);
-  }
+  /* This tells the section to start exactly at the bottom of the header */
+  margin-top: calc(header_height); 
+}
+
 }
