@@ -116,7 +116,7 @@ header {
 /* ----- buttoms boxes in the header------  the ul, make the big box with all the small boxes*/
 header ul {
   list-style:none;
-  height:240px;
+  height:180px;
   padding:0;
   background: #e8e8e8;
   border-radius:5px;
@@ -124,12 +124,14 @@ header ul {
   width:270px;
 }
 
+
+/* information on each small box*/
 header li {
 /*  width:260px; */
   width: 100%;
   float:none;
   border-right:none;
-  height:80px;
+  height:60px;
   border-bottom: 1px solid #8034e4; /* Add a border at the bottom */
 }
 
