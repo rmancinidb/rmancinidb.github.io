@@ -367,7 +367,7 @@ footer {
     height: auto;      /* Height adjusts to the content */
     padding: 5px 0;     /* Small cushion */
     z-index: 1000;     /* Ensures it stays on top of the text */
-    background: #fde1f7;  /* Your sidebar color */
+    background: #ffd78d;  /* Your sidebar color */
   }
 
   /* This puts the buttons section in a lateral (horizontal) row */
