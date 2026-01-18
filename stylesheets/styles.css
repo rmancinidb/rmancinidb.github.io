@@ -57,7 +57,7 @@ a:hover small {
 
 
 
-/* this indicate the size use by the website */
+/* ---------------   this indicate the size in the screen use by the website --------------- */
 /*.wrapper {
   width:860px;
   margin:0 auto;
@@ -65,7 +65,7 @@ a:hover small {
 
 
 .wrapper {
-  width: 90%;       /* 1. Use a percentage instead of a fixed pixel number */
+  width: 95%;       /* 1. Use a percentage instead of a fixed pixel number */
   max-width: 1200px; /* 2. Optional: Stops the site from getting TOO wide on giant screens */
   margin: 0 auto;    /* 3. Keeps the content centered */
 }
@@ -120,13 +120,21 @@ img {
 
 
 
-/*------------ This indicate the header size and position ------------*/
+/*------------ This indicate the header size and position (left panel) ------------*/
 header {
 /*  width:270px; */
   width:25%;
   float:left;
   position:fixed;
   -webkit-font-smoothing:subpixel-antialiased;
+
+/* for the background */
+background-color: #6f0f50; /* A dark charcoal gray */
+  padding: 20px;             /* Adds space inside the sidebar */
+  height: 100vh;             /* Makes the color go all the way to the bottom */
+  top: 0;                    /* Sticks it to the very top */
+  left: 0;                   /* Sticks it to the very left */
+
 }
 /*------------ This indicate the header size and position ------------*/
 
@@ -142,7 +150,7 @@ header ul {
   list-style:none;
   height:180px;
   padding:0;
-  background: #e8e8e8;
+  background: #e8e8e800;
   border-radius:5px;
   border:1px solid #e0e0e0;
   width:270px;
@@ -156,7 +164,7 @@ header li {
   float:none;
   border-right:none;
   height:60px;
-  border-bottom: 1px solid #8034e4; /* Add a border at the bottom */
+  border-bottom: 1px solid #00770a; /* Add a border at the bottom */
 }
 
 /* Round the top corners of the very first button */
