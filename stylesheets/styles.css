@@ -123,7 +123,7 @@ img {
 /*------------ This indicate the header size and position (left panel) ------------*/
 header {
 /*  width:270px; */
-  width:25%;
+  width:17%;
   float:left;
   position:fixed;
   -webkit-font-smoothing:subpixel-antialiased;
@@ -215,11 +215,38 @@ strong {
   font-weight:500;
 }
 
-header ul li + li + li {
-/*  border-right:none; */
-/*  width:89px; */
-width: 100%;
+/* making lines independent for each button */
+/* 1. Necessary so the line stays inside the button area */
+header ul li {
+  position: relative;
+  list-style: none;
 }
+
+/* 2. Create the line for EVERY list item */
+header ul li::before {
+  content: "";
+  position: absolute;
+  top: 0;            /* Positions line at the top of each box */
+  left: 25px;        /* Shorter on the left */
+  width: 70%;        /* Total length of the line */
+  height: 5px;       /* THICKNESS */
+  background-color: #002a03; 
+}
+
+/* 3. Optional: Hide the line for the very FIRST button only */
+/* (So there isn't a line floating above your first button) */
+header ul li:first-child::before {
+  display: none;
+}
+/* making lines independent for each button */
+
+
+
+/* header ul li + li + li {
+  border-right:none; 
+  width:89px; 
+width: 100%;
+} */
 
 header ul a strong {
   font-size:14px;
@@ -236,8 +263,8 @@ header ul a strong {
 /* ------------ section (right part) stetic ------------ */
 section {
   /* width:500px;*/
-  width: 70%;
-  margin-left:30%;
+  width: 80%;
+  margin-left:17%;
   float:right;
   padding-bottom:50px;
 }
@@ -361,8 +388,8 @@ footer {
   /* This makes the header stick to the top of the phone screen */
   header {
     position: fixed;   /* Sticks it */
-    top: 0;
-    left: 0;
+    top: 0;             /* Sticks it to the very top of the phone   */
+    left: 0;            /* Sticks it to the very left of the phone */
     width: 100%;       /* Spans the full width of the phone */
     height: auto;      /* Height adjusts to the content */
     padding: 5px 0;     /* Small cushion */
@@ -370,7 +397,8 @@ footer {
     background: #ffd78d;  /* Your sidebar color */
   }
 
-  /* This puts the buttons section in a lateral (horizontal) row */
+  /* This create the full organizarion of bottos
+  puts the buttons section in a lateral (horizontal) row */
   header ul {
     display: flex;        /* The easiest way to put things in a row */
     flex-direction: row;  /* Force side-by-side */
