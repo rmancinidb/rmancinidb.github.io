@@ -359,7 +359,6 @@ footer {
 @media print, screen and (max-width: 720px) {
   
   /* This makes the header stick to the top of the phone screen */
-  
   header {
     position: fixed;   /* Sticks it */
     top: 0;
@@ -400,9 +399,8 @@ footer {
   }
 
  /* Make sure the main content doesn't get hidden under the fixed header */
-section {
-  /* This tells the section to start exactly at the bottom of the header */
-  margin-top: calc(header_height); 
-}
+  section {
+    margin-top: 150px;    /* Pushes the text down so it's not under the header */
+  }
 
 }
