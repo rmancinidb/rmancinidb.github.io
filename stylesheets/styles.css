@@ -129,7 +129,7 @@ header {
   -webkit-font-smoothing:subpixel-antialiased;
 
 /* for the background */
-background-color: #895e7c; /* A dark charcoal gray */
+background-color: #fffed7; /* A dark charcoal gray */
   padding: 20px;             /* Adds space inside the sidebar */
   height: 100vh;             /* Makes the color go all the way to the bottom */
   top: 0;                    /* Sticks it to the very top */
