@@ -362,7 +362,7 @@ footer {
 
   /* Define a variable for the height of the header */
 :root {
-    --header-height: 10px; /* Adjust this number until it looks perfect */
+    --header-height: 50px; /* Adjust this number until it looks perfect */
   }
 
 
@@ -372,8 +372,8 @@ footer {
     top: 0;
     left: 0;
     width: 100%;       /* Spans the full width of the phone */
-    height: var(--header-height);      /* Height fix by the variable */
-    padding: 5px 0;     /* Small cushion */
+    /* height: var(--header-height);      /* Height fix by the variable */
+    /* padding: 5px 0;     /* Small cushion */
     z-index: 1000;     /* Ensures it stays on top of the text */
     background: #fde1f7;  /* Your sidebar color */
   }
@@ -383,7 +383,7 @@ footer {
     display: flex;        /* The easiest way to put things in a row */
     flex-direction: row;  /* Force side-by-side */
     width: 100%;          /*The list of buttoms fill everything */
-    height: auto;
+    /* height: auto; */
     margin: 0;     /* Space above the buttons */
     padding: 0;    /* No extra space inside the buttons area */
   }
@@ -399,7 +399,7 @@ footer {
 
   header ul li a {
     /* 3. Make the buttons feel "thicker" and easier to tap */
-    padding: 90px 0; 
+    padding: 5px 0; 
     height: var(--header-height);    /* Overwrite the old 34px height */
     line-height: 1; /* Centers the text perfectly */
     display: block;
