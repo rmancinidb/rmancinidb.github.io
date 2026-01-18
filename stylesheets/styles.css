@@ -130,7 +130,7 @@ header {
 
 /* for the background */
 background-color: #fffed7; /* A dark charcoal gray */
-  padding: 20px;             /* Adds space inside the sidebar */
+  padding: 10px;             /* Adds space inside the sidebar */
   height: 100vh;             /* Makes the color go all the way to the bottom */
   top: 0;                    /* Sticks it to the very top */
   left: 0;                   /* Sticks it to the very left */
@@ -166,7 +166,7 @@ header li {
   float:none;
   border-right:none;
   height:60px;
-  border-bottom: 5px solid #031d04; /* Add a border at the bottom */
+  border-bottom: 2px solid #031d04; /* Add a border at the bottom */
   padding-bottom: 15px; /* Space between the border and the text */
 }
 
