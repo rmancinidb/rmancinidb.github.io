@@ -233,7 +233,7 @@ header ul a strong {
 
 
 
-/* ------------ section (left part) stetic ------------ */
+/* ------------ section (right part) stetic ------------ */
 section {
   /* width:500px;*/
   width: 70%;
@@ -241,7 +241,7 @@ section {
   float:right;
   padding-bottom:50px;
 }
-/* ------------ section (left part) stetic ------------ */
+/* ------------ section (right part) stetic ------------ */
 
 
 
@@ -263,6 +263,14 @@ footer {
   bottom:50px;
   -webkit-font-smoothing:subpixel-antialiased;
 }
+
+
+
+
+
+
+/*----------------- This part is for small screens like mobile phones and tablets */
+
 
 @media print, screen and (max-width: 960px) {
 
@@ -336,5 +344,51 @@ footer {
     padding:0.4in;
     font-size:12pt;
     color:#444;
+  }
+}
+
+/*----------------- This part is for small screens like mobile phones and tablets */
+
+
+
+
+
+
+/*----------------- My Version for mobile phones and tablets */
+
+@media print, screen and (max-width: 720px) {
+  
+  /* This makes the header stick to the top of the phone screen */
+  header {
+    position: fixed;   /* Sticks it */
+    top: 0;
+    left: 0;
+    width: 100%;       /* Spans the full width of the phone */
+    height: auto;      /* Height adjusts to the content */
+    padding: 10px;     /* Small cushion */
+    z-index: 1000;     /* Ensures it stays on top of the text */
+    background: #fde1f7;  /* Your sidebar color */
+  }
+
+  /* This puts the buttons section in a lateral (horizontal) row */
+  header ul {
+    display: flex;        /* The easiest way to put things in a row */
+    flex-direction: row;  /* Force side-by-side */
+    width: 100%;          /*The list of buttoms fill everything
+    height: auto;
+    margin: 10px 0 0;     /* Space above the buttons */
+  }
+
+  /*This work with the independent buttons in the header */
+  header li {
+    flex: 1;              /* Makes each button take up equal space */
+    width: auto !important; /* he !important tells the browser to ignore that old "89px" width we had earlier and let the "flex" rule decide the width instead.*/
+    border-bottom: none;  /* Remove the vertical stack border */
+    border-right: 1px solid #001702; /* Add lateral dividers */
+  }
+
+  /* Make sure the main content doesn't get hidden under the fixed header */
+  section {
+    margin-top: 150px;    /* Pushes the text down so it's not under the header */
   }
 }
