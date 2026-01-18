@@ -356,22 +356,23 @@ footer {
 
 /*----------------- My Version for mobile phones and tablets */
 
+
 @media print, screen and (max-width: 720px) {
   
-  /* This makes the header stick to the top of the phone screen */
 
   /* Define a variable for the height of the header */
 :root {
-    --header-height: 50px; /* Adjust this number until it looks perfect */
+    --header-height: 10px; /* Adjust this number until it looks perfect */
   }
 
 
   header {
-    position: fixed;   /* Sticks it */
+      
+    position: fixed;   /* This makes the header stick to the top of the phone screen */
     top: 0;
     left: 0;
     width: 100%;       /* Spans the full width of the phone */
-    height: var(--header-height);      /* Height adjusts to the content */
+    height: var(--header-height);      /* Height fix by the variable */
     padding: 5px 0;     /* Small cushion */
     z-index: 1000;     /* Ensures it stays on top of the text */
     background: #fde1f7;  /* Your sidebar color */
