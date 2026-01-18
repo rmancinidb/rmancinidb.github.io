@@ -400,7 +400,8 @@ footer {
 
  /* Make sure the main content doesn't get hidden under the fixed header */
   section {
-    margin-top: 150px;    /* Pushes the text down so it's not under the header */
+    /* margin-top: 150px;    /* Pushes the text down so it's not under the header */
+   margin-top: calc(header_height); 
   }
 
 }
