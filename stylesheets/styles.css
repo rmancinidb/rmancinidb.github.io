@@ -400,7 +400,7 @@ footer {
   header ul li a {
     /* 3. Make the buttons feel "thicker" and easier to tap */
     padding: 5px 0; 
-    height: var(--header-height);    /* Overwrite the old 34px height */
+    height: auto;    /* Overwrite the old 34px height */
     line-height: 1; /* Centers the text perfectly */
     display: block;
     text-align: center; /* Centers the text horizontally */
@@ -409,7 +409,6 @@ footer {
  /* Make sure the main content doesn't get hidden under the fixed header */
 section {
     /* Now the margin matches the header height automatically! */
-    margin-top: var(--header-height); 
-    padding-top: 20px; /* Optional: adds a little extra gap so text isn't touching the bar */
+    margin-top: calc(header_height);
   }
 }
