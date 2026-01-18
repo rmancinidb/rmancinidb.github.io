@@ -1,30 +1,61 @@
+% Head, instructions and background information
 <!doctype html>
 <html>
   <head>
+
+    <!-- Meta data -->
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Minimal by Steve Smith</title>
+    <!-- This matches the viewport on mobile devices to ensure proper scaling -->
+    <meta name="viewport" content="width=device-width">
 
+    <!-- Title in the browser tab -->
+    <title>Renzo Mancini CV</title>
+
+    <!-- This two links with the stylesheets, my css files (files that handle colors, fonts, and layout) -->
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width">
+
+    <!-- line for old compatibility browsers -->
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+
   </head>
+
   <body>
+
+    <!-- <div> is like an invisible box used to group things together. -->
+    <!--  The clase wrapper in the style.css avoids extra stretch in big monitors -->
     <div class="wrapper">
+
+      <!-- This is the side bar, text and images -->
       <header>
-        <h1>Minimal</h1>
-        <img src="https://cdn.omlet.com/images/cache/850/567/breed_abyssinian_cat.webp" alt="Description of image" width="500">
+
+        <!-- title header -->
+        <h1>Renzo Mancini De Barbieri</h1>
+
+        <!-- image and text -->
+        <img src="https://cdn.omlet.com/images/cache/850/567/breed_abyssinian_cat.webp" alt="Here should be an image" width="500">
         <p>A Theme for GitHub Pages.....</p>
-        <p class="view"><a href="http://github.com/orderedlist/minimal">View the Project on GitHub <small>orderedlist/minimal</small></a></p>
+
+        <!-- <a> indicates a link, href is the link itself, the following text is what is writen, the fact that the <a> is after the small text, make it also a link -->
+        <!-- the class=view affect the mobile version since it is inside @media print, screen and (max-width: 720px) { in the style.css -->
+          <p class="view"><a href="https://orcid.org/0000-0002-9915-1604">https://orcid.org/0000-0002-9915-1604 <small>Orcid</small></a></p>
+        
+        <!-- Boxes with the list, the <strong> make the text bold -->
         <ul>
           <li><a href="https://github.com/orderedlist/minimal/zipball/master">Download <strong>ZIP File</strong></a></li>
           <li><a href="https://github.com/orderedlist/minimal/tarball/master">Download <strong>TAR Ball</strong></a></li>
           <li><a href="http://github.com/orderedlist/minimal">Fork On <strong>GitHub</strong></a></li>
         </ul>
+
       </header>
+
+
+
+
       <section>
         <h1>GitHub Flavored Markdown</h1>
 
