@@ -183,7 +183,7 @@ header li:last-child a {
 /* 3. Center the text inside the clickable area */
 header ul a {
   display: block;    /* Makes the link fill the whole small box */
-  text-align: center; /* Centers the text horizontally */
+  text-align: left; /* Centers the text horizontally */
   padding: 10px 0;   /* Adds some space so the text isn't touching the edges */
   width: 100%;       /* Ensures it spans the whole width */
   font-size:11px;
