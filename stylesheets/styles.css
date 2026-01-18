@@ -399,7 +399,7 @@ footer {
 
   header ul li a {
     /* 3. Make the buttons feel "thicker" and easier to tap */
-    padding: 15px 0; 
+    padding: 90px 0; 
     height: var(--header-height);    /* Overwrite the old 34px height */
     line-height: 1; /* Centers the text perfectly */
     display: block;
