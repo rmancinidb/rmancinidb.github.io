@@ -166,7 +166,8 @@ header li {
   float:none;
   border-right:none;
   height:60px;
-  border-bottom: 1px solid #002a03; /* Add a border at the bottom */
+  border-bottom: 5px solid #031d04; /* Add a border at the bottom */
+  padding-bottom: 15px; /* Space between the border and the text */
 }
 
 /* Round the top corners of the very first button */
@@ -216,37 +217,35 @@ strong {
 }
 
 /* making lines independent for each button */
-/* 1. Necessary so the line stays inside the button area */
-header ul li {
-  position: relative;
-  list-style: none;
-}
 
-/* 2. Create the line for EVERY list item */
-header ul li::before {
-  content: "";
-  position: absolute;
-  top: 0;            /* Positions line at the top of each box */
-  left: 25px;        /* Shorter on the left */
-  width: 70%;        /* Total length of the line */
-  height: 5px;       /* THICKNESS */
-  background-color: #002a03; 
-}
+/* Set the stage to define independe tlines */
+/* header ul li { */
+/*  position: relative;     /* thos puts the line relative to each item */
+/*  list-style: none;   /* This removes the default bullet points (the little dots) that browsers usually put next to list items.*/
+/* Add a little padding so the text doesn't touch your new lines */
+/*  padding-bottom: 20px;   /* space between line and text */
+/*  margin-bottom: 10px; /* This creates external space between the buttons. It pushes the next button down so the sidebar doesn't look cramped.*/
+/* } */
 
-/* 3. Optional: Hide the line for the very FIRST button only */
-/* (So there isn't a line floating above your first button) */
-header ul li:first-child::before {
-  display: none;
-}
-/* making lines independent for each button */
-
+/* Put a rounded 'fake' line at the bottom of EVERY item */
+/* header ul li::after {  /*is a "pseudo-element." It basically tells CSS to "invent" a new invisible box inside the li that we can style as a line.*/
+/*  content: ""; /*on switch to turn on the pseudo-element */
+/*  position: absolute; /* This allows us to move the line anywhere inside the button box regardless of where the text is. It "floats" it relative to the button.*/
+/*  bottom: 0;           /* Always at the bottom of the item */
+/*  left: 25px;
+/*  width: 70%;
+/*  height: 6px;
+  background-color: #002a03;
+  border-radius: 10px; /* Circular ends */
+/* } */
+/* making lines independent for each button */ 
 
 
-/* header ul li + li + li {
-  border-right:none; 
-  width:89px; 
+ header ul li + li + li {
+ /* border-right:none; 
+  width:89px; */
 width: 100%;
-} */
+} 
 
 header ul a strong {
   font-size:14px;
