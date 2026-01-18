@@ -54,10 +54,25 @@ a:hover small {
   color:#777;
 }
 
-.wrapper {
+
+
+
+/* this indicate the size use by the website */
+/*.wrapper {
   width:860px;
   margin:0 auto;
+}*/
+
+
+.wrapper {
+  width: 90%;       /* 1. Use a percentage instead of a fixed pixel number */
+  max-width: 1200px; /* 2. Optional: Stops the site from getting TOO wide on giant screens */
+  margin: 0 auto;    /* 3. Keeps the content centered */
 }
+/* this indicate the size use by the website */
+
+
+
 
 blockquote {
   border-left:1px solid #e5e5e5;
@@ -103,17 +118,26 @@ img {
   max-width:100%;
 }
 
+
+
+/*------------ This indicate the header size and position ------------*/
 header {
-  width:270px;
+/*  width:270px; */
+  width:25%;
   float:left;
   position:fixed;
   -webkit-font-smoothing:subpixel-antialiased;
 }
+/*------------ This indicate the header size and position ------------*/
 
 
 
 
-/* ----- buttoms boxes in the header------  the ul, make the big box with all the small boxes*/
+
+
+
+/* ------------ buttoms boxes in the header------  ------ */
+/* the ul, make the big box with all the small boxes */
 header ul {
   list-style:none;
   height:180px;
@@ -192,18 +216,24 @@ header ul a strong {
   display:block;
   color:#222;
 }
-
-/* ----- buttoms boxes in the header------ */
-
+/* ------------ buttoms boxes in the header ------------ */
 
 
 
 
+
+
+/* ------------ section (left part) stetic ------------ */
 section {
-  width:500px;
+  /* width:500px;*/
+  width: 70%;
+  margin-left:30%;
   float:right;
   padding-bottom:50px;
 }
+/* ------------ section (left part) stetic ------------ */
+
+
 
 small {
   font-size:11px;
