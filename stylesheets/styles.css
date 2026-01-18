@@ -130,7 +130,7 @@ header {
 
 /* for the background */
 background-color: #fffed7; /* A dark charcoal gray */
-  padding: 10px;             /* Adds space inside the sidebar */
+  padding: 20px;             /* Adds space inside the sidebar */
   height: 100vh;             /* Makes the color go all the way to the bottom */
   top: 0;                    /* Sticks it to the very top */
   left: 0;                   /* Sticks it to the very left */
