@@ -359,12 +359,19 @@ footer {
 @media print, screen and (max-width: 720px) {
   
   /* This makes the header stick to the top of the phone screen */
+
+  /* Define a variable for the height of the header */
+:root {
+    --header-height: 50px; /* Adjust this number until it looks perfect */
+  }
+
+
   header {
     position: fixed;   /* Sticks it */
     top: 0;
     left: 0;
     width: 100%;       /* Spans the full width of the phone */
-    height: auto;      /* Height adjusts to the content */
+    height: var(--header-height);      /* Height adjusts to the content */
     padding: 5px 0;     /* Small cushion */
     z-index: 1000;     /* Ensures it stays on top of the text */
     background: #fde1f7;  /* Your sidebar color */
@@ -388,11 +395,7 @@ footer {
     border-right: 1px solid #001702; /* Add lateral dividers */
   }
 
-  /* Make sure the main content doesn't get hidden under the fixed header */
-  section {
-    margin-top: 150px;    /* Pushes the text down so it's not under the header */
-  }
-
+ 
   header ul li a {
     /* 3. Make the buttons feel "thicker" and easier to tap */
     padding: 15px 0; 
@@ -402,4 +405,10 @@ footer {
     text-align: center; /* Centers the text horizontally */
   }
 
+ /* Make sure the main content doesn't get hidden under the fixed header */
+section {
+    /* Now the margin matches the header height automatically! */
+    margin-top: var(--header-height); 
+    padding-top: 20px; /* Optional: adds a little extra gap so text isn't touching the bar */
+  }
 }
