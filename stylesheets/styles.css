@@ -113,12 +113,12 @@ header {
 
 
 
-/* ----- buttoms boxes in the hearder------ */
+/* ----- buttoms boxes in the hearder------  the ul, make the big box with all the small boxes*/
 header ul {
   list-style:none;
-  height:40px;
+  height:240px;
   padding:0;
-  background: #f4f4f4;
+  background: #cc1a1a;
   border-radius:5px;
   border:1px solid #e0e0e0;
   width:270px;
@@ -129,7 +129,7 @@ header li {
   float:none;
   border-right:none;
   height:80px;
-  border-bottom: 1px solid #e0e0e0; /* Add a border at the bottom */
+  border-bottom: 1px solid #8034e4; /* Add a border at the bottom */
 }
 
 /* Round the top corners of the very first button */
