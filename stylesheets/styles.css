@@ -374,7 +374,7 @@ footer {
   header ul {
     display: flex;        /* The easiest way to put things in a row */
     flex-direction: row;  /* Force side-by-side */
-    width: 100%;          /*The list of buttoms fill everything
+    width: 100%;          /*The list of buttoms fill everything */
     height: auto;
     margin: 10px 0 0;     /* Space above the buttons */
   }
