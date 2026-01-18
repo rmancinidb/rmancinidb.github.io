@@ -155,7 +155,7 @@ header ul {
   /* border:1px solid #e0e0e0; */ /* if i want borders around the big box */
   /* width:270px; */
   width: 100%;
-  margin:10px 0 0 0;
+  margin:5px 0 0 0;
 }
 
 
@@ -167,7 +167,7 @@ header li {
   border-right:none;
   height:60px;
   border-bottom: 2px solid #031d04; /* Add a border at the bottom */
-  padding-bottom: 15px; /* Space between the border and the text */
+  padding-bottom: 10px; /* Space between the border and the text */
 }
 
 /* Round the top corners of the very first button */
