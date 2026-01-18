@@ -113,19 +113,20 @@ header {
 
 
 
-/* ----- buttoms boxes in the hearder------  the ul, make the big box with all the small boxes*/
+/* ----- buttoms boxes in the header------  the ul, make the big box with all the small boxes*/
 header ul {
   list-style:none;
   height:240px;
   padding:0;
-  background: #cc1a1a;
+  background: #e8e8e8;
   border-radius:5px;
   border:1px solid #e0e0e0;
   width:270px;
 }
 
 header li {
-  width:260px;
+/*  width:260px; */
+  width: 100%;
   float:none;
   border-right:none;
   height:80px;
@@ -141,13 +142,21 @@ header li:first-child a {
 header li:last-child a {
   border-radius: 0 0 5px 5px;
 }
-/* ----- buttoms boxes in the hearder------ */
 
 
-
-
-
+/* 3. Center the text inside the clickable area */
 header ul a {
+  display: block;    /* Makes the link fill the whole small box */
+  text-align: center; /* Centers the text horizontally */
+  padding: 10px 0;   /* Adds some space so the text isn't touching the edges */
+  width: 100%;       /* Ensures it spans the whole width */
+  font-size:11px;
+  color:#999;
+  padding: 15px 0;
+}
+
+/* thext in the ul big box */
+/*header ul a {
   line-height:1;
   font-size:11px;
   color:#999;
@@ -155,7 +164,7 @@ header ul a {
   text-align:center;
   padding-top:6px;
   height:34px;
-}
+} */
 
 header ul a:hover {
   color:#999;
@@ -171,8 +180,9 @@ strong {
 }
 
 header ul li + li + li {
-  border-right:none;
-  width:89px;
+/*  border-right:none; */
+/*  width:89px; */
+width: 100%;
 }
 
 header ul a strong {
@@ -180,6 +190,12 @@ header ul a strong {
   display:block;
   color:#222;
 }
+
+/* ----- buttoms boxes in the header------ */
+
+
+
+
 
 section {
   width:500px;
