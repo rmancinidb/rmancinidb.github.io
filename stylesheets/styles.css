@@ -373,6 +373,24 @@ footer {
   }
 }
 
+
+
+/* Custom rule for the large top image in the right panel */
+.hero-image {
+  width: 100%;           /* This makes it fill the section width exactly */
+  height: auto;          /* This keeps the image from stretching/squishing */
+  display: block;        /* Removes extra space at the bottom */
+  margin: 0 0 30px 0;    /* Adds space only at the bottom, before the text */
+}
+
+/* Optional: To make the image sit perfectly at the top edge */
+section {
+  padding-top: 0 !important;
+}
+
+
+
+
 /*----------------- This part is for small screens like mobile phones and tablets */
 
 
@@ -432,3 +450,4 @@ footer {
   }
 
 }
+
