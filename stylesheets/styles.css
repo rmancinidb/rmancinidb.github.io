@@ -26,8 +26,8 @@ h1 {
 }
 
 h2 {
-  color:#393939;
-  font-weight: 500;
+  margin-bottom: 0px;
+  padding-bottom: 6px;
 }
 
 h3, h4, h5, h6 {
@@ -395,7 +395,7 @@ section {
 
 
 .content-padding {
-  padding: 100px 100px;     /* This creates the text margin you like */
+  padding: 100px 250px;     /* This creates the text margin you like */
   display: block;
   clear: both;            /* Ensures it stays below the image */
 }
@@ -403,7 +403,19 @@ section {
 /* ------------ section (right part) stetic ------------ */
 
 
+/* --------- content separators / small UI elements --------- */
+.blue-divider {
+  border: none;
+  border-top: 4px solid #39c;
+  margin: 0 0 20px 0;
+  width: 100%;
+}
 
+.side-by-side {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
 
 
 
@@ -473,3 +485,12 @@ section {
 
 }
 
+@media screen and (max-width: 720px) {
+  .side-by-side {
+    flex-direction: column;
+  }
+
+  .side-by-side img {
+    width: 100%;
+  }
+}
